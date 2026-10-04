@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Analysis & Ranking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Resume Analysis & Ranking</h1>
+
+        <form id="resumeForm">
+
+            <label for="resume">Upload Resume</label>
+            <input
+                type="file"
+                id="resume"
+                name="resume"
+                accept=".pdf,.doc,.docx"
+            >
+
+            <label for="jobDescription">Job Description</label>
+            <textarea
+                id="jobDescription"
+                name="job_description"
+                placeholder="Enter the job description..."
+                required
+            ></textarea>
+
+            <button type="submit">Analyze Resume</button>
+
+        </form>
+
+        <div id="result" class="result">
+            <h2>Analysis Result</h2>
+            <p id="prediction"></p>
+            <p id="fitScore"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
